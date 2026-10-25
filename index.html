@@ -1,0 +1,1125 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-page-node-id="NApgEIkZ2c1GQ00v1ElCVW"><head data-page-node-id="Lt2TZ0fQEK9YR2L4KhA2By">
+<meta charset="UTF-8" data-page-node-id="ECzy7EJex3NkG4Pb0eHKW9">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" data-page-node-id="AzJBXW8RHcNC8oTHKaASeO">
+<meta name="format-detection" content="telephone=no" data-page-node-id="jwIvTAnr65McaOFhwC3PuH">
+<title data-page-node-id="1uQtVGjvgZPjRCTsndjMag">当代年轻人精神状态鉴定书</title>
+<style data-page-node-id="G7PTklIiJhVWNHVpsCR9aU">
+:root{
+  --bg:#FFF3E0;
+  --ink:#16161A;
+  --card:#FFFFFF;
+  --pink:#FF4D8D;
+  --yellow:#FFD52E;
+  --blue:#3A86FF;
+  --cyan:#22D3C5;
+  --purple:#7C5CFF;
+  --orange:#FF8A3D;
+  --red:#F43F5E;
+  --green:#10B981;
+  --teal:#0EA5C9;
+  --slate:#64748B;
+  --amber:#F59E0B;
+  --muted:#5C5C68;
+  --bd:3px solid var(--ink);
+  --sh:5px 5px 0 var(--ink);
+  --sh-s:3px 3px 0 var(--ink);
+  --r:16px;
+}
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{font-size:16px;-webkit-text-size-adjust:100%}
+body{
+  background-color:var(--bg);
+  background-image:radial-gradient(rgba(22,22,26,.07) 1.5px, transparent 1.5px);
+  background-size:22px 22px;
+  color:var(--ink);
+  font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","HarmonyOS Sans SC","MiSans","Microsoft YaHei","Noto Sans SC",sans-serif;
+  line-height:1.7;
+  min-height:100vh;
+}
+button{font-family:inherit;touch-action:manipulation}
+.app{max-width:600px;margin:0 auto;min-height:100vh;padding:20px 18px calc(28px + env(safe-area-inset-bottom));position:relative}
+
+/* ============ 屏幕路由 ============ */
+.screen{display:none}
+.screen.active{display:block;animation:screenIn .35s ease both}
+@keyframes screenIn{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+
+/* ============ 开始页 ============ */
+.hero-badge{display:inline-block;background:var(--ink);color:#fff;font-weight:800;font-size:16px;padding:5px 14px;border-radius:999px;letter-spacing:.14em}
+.hero-title{margin:16px 0 12px;position:relative}
+.hero-title .line{display:inline-block;border:var(--bd);font-weight:900;border-radius:12px;line-height:1.25}
+.line1{background:#fff;box-shadow:var(--sh-s);padding:6px 18px;font-size:34px;transform:rotate(-1.5deg)}
+.line2{background:var(--pink);color:#fff;box-shadow:var(--sh);padding:6px 22px;font-size:46px;transform:rotate(1deg);margin-top:10px}
+.line3{background:var(--yellow);box-shadow:var(--sh);padding:4px 26px;font-size:54px;transform:rotate(-2deg);margin-top:10px;position:relative}
+.line3 .sticker{position:absolute;right:-30px;top:-24px;font-size:34px;transform:rotate(12deg)}
+.hero-sub{font-size:16px;font-weight:700;color:var(--muted);margin:6px 2px 14px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:6px}
+.chip{background:#fff;border:2px solid var(--ink);border-radius:999px;padding:3px 12px;font-size:16px;font-weight:700;box-shadow:2px 2px 0 var(--ink)}
+
+.notice{background:#fff;border:var(--bd);border-radius:var(--r);box-shadow:var(--sh);padding:16px 16px 14px;margin:20px 0 16px;position:relative}
+.notice::before{content:"";position:absolute;top:-11px;left:26px;width:76px;height:22px;background:rgba(124,92,255,.4);transform:rotate(-3deg);border-radius:2px}
+.notice h3{font-size:16px;font-weight:900;margin-bottom:6px}
+.notice p{font-size:16px;color:#43434E;line-height:1.75}
+.notice .privacy{margin-top:8px;font-weight:800;color:var(--ink)}
+
+.btn{display:block;width:100%;border:var(--bd);border-radius:999px;background:var(--yellow);box-shadow:var(--sh);padding:15px 16px;font-size:20px;font-weight:900;text-align:center;cursor:pointer;color:var(--ink);transition:transform .12s ease,box-shadow .12s ease}
+.btn:active{transform:translate(4px,4px);box-shadow:1px 1px 0 var(--ink)}
+.btn.pink{background:var(--pink);color:#fff}
+.btn.ghost{background:#fff}
+.btn.sm{font-size:16px;padding:11px 14px;border-radius:14px;box-shadow:var(--sh-s)}
+.resume-wrap{margin-top:12px;text-align:center}
+.resume-link{display:inline-block;font-size:16px;font-weight:800;color:var(--blue);text-decoration:underline;cursor:pointer;background:none;border:none}
+.hero-foot{margin-top:22px;text-align:center;font-size:16px;font-weight:800;color:var(--muted);letter-spacing:.18em}
+
+/* ============ 答题页 ============ */
+.quiz-top{display:flex;align-items:center;gap:10px;margin-bottom:16px}
+.q-count{font-weight:900;font-size:16px;white-space:nowrap}
+.progress{flex:1;height:18px;background:#fff;border:2px solid var(--ink);border-radius:999px;overflow:hidden}
+.progress-fill{height:100%;width:0%;background:repeating-linear-gradient(45deg,var(--pink) 0 10px,#FF85AC 10px 20px);transition:width .3s ease}
+.back-btn{flex:none;width:44px;height:44px;border:var(--bd);background:#fff;border-radius:12px;box-shadow:var(--sh-s);font-size:20px;font-weight:900;cursor:pointer;color:var(--ink)}
+.back-btn:disabled{opacity:.3;box-shadow:none;cursor:default}
+
+.axis-tag{display:inline-block;background:var(--purple);color:#fff;border:2px solid var(--ink);border-radius:999px;padding:3px 14px;font-weight:800;font-size:16px;box-shadow:2px 2px 0 var(--ink);margin-bottom:12px}
+.q-card{background:#fff;border:var(--bd);border-radius:20px;box-shadow:var(--sh);padding:24px 20px;margin-bottom:18px}
+.q-text{font-size:22px;font-weight:900;line-height:1.55}
+.options{display:flex;flex-direction:column;gap:12px}
+.option{display:flex;align-items:center;gap:12px;width:100%;text-align:left;background:#fff;border:var(--bd);border-radius:14px;box-shadow:var(--sh-s);padding:13px 15px;font-size:16px;font-weight:600;line-height:1.5;cursor:pointer;color:var(--ink);transition:transform .12s,box-shadow .12s,background .15s}
+.option:active{transform:translate(3px,3px);box-shadow:0 0 0 var(--ink)}
+.option .opt-letter{flex:none;width:34px;height:34px;border:2px solid var(--ink);border-radius:10px;background:var(--yellow);display:flex;align-items:center;justify-content:center;font-weight:900;font-size:16px}
+.option.picked{background:var(--pink);color:#fff}
+.option.picked .opt-letter{background:#fff;color:var(--ink)}
+
+/* ============ 计算动画 ============ */
+.screen-calc{min-height:72vh;flex-direction:column;align-items:center;justify-content:center;text-align:center}
+.screen-calc.active{display:flex}
+.calc-emoji{font-size:76px;animation:spinPulse 1s ease-in-out infinite}
+@keyframes spinPulse{0%,100%{transform:scale(1) rotate(-8deg)}50%{transform:scale(1.15) rotate(8deg)}}
+.calc-msg{font-size:20px;font-weight:900;margin:24px 0 18px;min-height:30px}
+.calc-progress{width:min(320px,82%);height:20px}
+.calc-progress .progress-fill{background:repeating-linear-gradient(45deg,var(--cyan) 0 10px,#8AE8E1 10px 20px);transition:width 2s linear}
+.calc-final{font-size:24px;font-weight:900;margin-top:20px;color:var(--green);min-height:34px}
+
+/* ============ 报告页 ============ */
+.report-head{display:flex;justify-content:space-between;align-items:center;gap:10px;background:var(--ink);color:#fff;border-radius:12px;padding:10px 14px;font-weight:800;font-size:16px;margin-bottom:16px}
+.report-head .code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;letter-spacing:.06em}
+.type-card{background:#fff;border:var(--bd);border-radius:22px;box-shadow:var(--sh);padding:28px 20px 22px;text-align:center;position:relative;margin-bottom:14px;overflow:hidden}
+.type-card::after{content:"";position:absolute;inset:0;background:repeating-linear-gradient(-45deg,transparent 0 14px,rgba(22,22,26,.03) 14px 28px);pointer-events:none}
+.type-emoji{width:86px;height:86px;border:var(--bd);border-radius:50%;background:var(--tc,var(--pink));display:flex;align-items:center;justify-content:center;font-size:44px;margin:0 auto 14px;box-shadow:var(--sh-s);position:relative;z-index:1}
+.type-name{font-size:34px;font-weight:900;line-height:1.3;position:relative;z-index:1}
+.type-title{font-size:16px;font-weight:700;color:var(--muted);margin-top:8px;position:relative;z-index:1}
+.type-tags{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:14px;position:relative;z-index:1}
+.tag{background:var(--tc,var(--pink));color:#fff;border:2px solid var(--ink);border-radius:999px;padding:2px 12px;font-size:16px;font-weight:800}
+.tag.rare{background:var(--yellow);color:var(--ink);animation:rareBlink 1.2s ease-in-out infinite}
+@keyframes rareBlink{0%,100%{box-shadow:2px 2px 0 var(--ink)}50%{box-shadow:2px 2px 0 var(--ink),0 0 14px var(--yellow)}}
+.stamp-row{display:flex;justify-content:flex-end;margin:2px 8px 16px}
+.stamp{border:3px double var(--red);color:var(--red);font-weight:900;font-size:16px;padding:5px 12px;border-radius:10px;transform:rotate(-10deg);letter-spacing:.3em;text-indent:.3em;background:rgba(244,63,94,.06)}
+.sec-card{background:#fff;border:var(--bd);border-radius:18px;box-shadow:var(--sh-s);padding:18px 16px;margin-bottom:16px}
+.sec-title{font-size:18px;font-weight:900;margin-bottom:12px}
+.bar-row{margin-bottom:14px}
+.bar-row:last-child{margin-bottom:0}
+.bar-head{display:flex;justify-content:space-between;align-items:baseline;gap:8px;font-size:16px;font-weight:800;margin-bottom:6px}
+.bar-head .lv{color:var(--muted);font-weight:700;font-size:16px}
+.bar-track{height:16px;background:#F2EEE3;border:2px solid var(--ink);border-radius:999px;overflow:hidden}
+.bar-fill{height:100%;width:0;border-radius:999px}
+.bar-note{font-size:16px;color:var(--muted);margin-top:12px;line-height:1.6}
+.sec-card p.desc{font-size:16px;line-height:1.85;color:#33333d}
+.advice-list{list-style:none}
+.advice-list li{display:flex;gap:10px;font-size:16px;line-height:1.7;margin-bottom:10px;align-items:flex-start}
+.advice-list li:last-child{margin-bottom:0}
+.advice-list li::before{content:"";flex:none;width:20px;height:20px;border:2px solid var(--ink);border-radius:6px;background:var(--yellow);margin-top:5px}
+.match-card{background:var(--cyan);border:var(--bd);border-radius:18px;box-shadow:var(--sh-s);padding:16px;font-size:16px;font-weight:700;line-height:1.75;margin-bottom:16px}
+.verdict-card{background:#fff;border:var(--bd);border-radius:18px;box-shadow:var(--sh-s);padding:16px;font-size:16px;font-weight:800;line-height:1.75;margin-bottom:16px;position:relative}
+.verdict-card::before{content:"医嘱";position:absolute;top:-13px;left:14px;background:var(--ink);color:#fff;font-size:16px;font-weight:900;padding:1px 10px;border-radius:8px}
+.share-actions{display:flex;flex-direction:column;gap:12px;margin:22px 0 12px}
+.share-hint{font-size:16px;color:var(--muted);text-align:center;font-weight:700;margin-bottom:20px}
+.report-foot{font-size:16px;color:var(--muted);line-height:1.8;border-top:2px dashed rgba(22,22,26,.25);padding-top:16px}
+.watermark{text-align:center;font-weight:900;font-size:16px;color:var(--ink);margin-top:10px;letter-spacing:.16em}
+
+/* ============ 分享卡片弹层 ============ */
+.modal-mask{position:fixed;inset:0;background:rgba(22,22,26,.74);display:none;align-items:center;justify-content:center;z-index:50;padding:20px}
+.modal-mask.show{display:flex}
+.modal{background:var(--bg);border:var(--bd);border-radius:18px;box-shadow:var(--sh);max-width:330px;width:100%;padding:16px;text-align:center;max-height:88vh;overflow:auto}
+.modal img{width:100%;border:2px solid var(--ink);border-radius:12px;display:block}
+.modal p{font-size:16px;font-weight:800;margin:12px 0 10px;line-height:1.6}
+.modal .btn{margin-top:4px}
+
+/* ============ Toast ============ */
+.toast{position:fixed;left:50%;bottom:48px;transform:translateX(-50%) translateY(20px);background:var(--ink);color:#fff;font-size:16px;font-weight:800;padding:10px 18px;border-radius:999px;opacity:0;pointer-events:none;transition:opacity .25s,transform .25s;z-index:60;max-width:82vw;text-align:center}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+
+.reveal{animation:flipIn .55s cubic-bezier(.2,.9,.3,1.2) both}
+@keyframes flipIn{from{opacity:0;transform:perspective(900px) rotateX(38deg) translateY(30px)}to{opacity:1;transform:none}}
+
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important}
+}
+</style>
+<style id="__dm_no_drag_style__">* { -webkit-user-drag: none !important; }</style><style id="__dm_bindable_badge_style__">[data-sp-bindable="database"]{outline:1px dashed #0088ff;outline-offset:2px;border-radius:4px;}[data-sp-bindable="database"] *{pointer-events:none !important;transition:none !important;animation:none !important;}[data-sp-bindable="database"]{transition:none !important;animation:none !important;}</style></head>
+<body data-page-node-id="ABji7Rcbi44CosBHPRCslq" style="position: relative;">
+<div class="app" data-page-node-id="IrrXkkJq15sFc4omDGLbjB">
+
+  <!-- ============ 开始页 ============ -->
+  <section class="screen active" id="screen-start" data-page-node-id="5CbJGBm4vtoc1nYUCP5wBR">
+    <span class="hero-badge" data-page-node-id="4Dgxh35EbaWv6OJD0qct0Z">娱乐测算 · 非专业诊断</span>
+    <div class="hero-title" data-page-node-id="KJabAAY2wZw8gonqz2KVCm">
+      <span class="line line1" data-page-node-id="oDXYmpPKe0T79STihi8rs9">当代年轻人</span><br data-page-node-id="JZ6vd1NSiXHg9lxMBH9jRR">
+      <span class="line line2" data-page-node-id="pItrwsxeEHsZRBZBrmm127">精神状态</span><br data-page-node-id="ux6IkUb2kKyP3hbbZ1hYu7">
+      <span class="line line3" data-page-node-id="SnBlwlFwJmNAGltWCg9aRM">鉴定书<span class="sticker" data-page-node-id="kqHagoWOUSPNZ6EBqTZIM2">🧪</span></span>
+    </div>
+    
+    <p class="hero-sub" data-page-node-id="gz5B7Q8H7pXqoNtWY4K6V6">18 道题 · 2 分钟 · 给你开一张精神浓度诊断报告</p><div class="chips" data-page-node-id="7k2dh64gWVaUahgADWXsQ1">
+      <span class="chip" data-page-node-id="kWMK5aSzWMqDuuie1xwfGI">🧩 12 款稀有型号</span>
+      <span class="chip" data-page-node-id="gEDhVrZ84DBcaM8Pp0y54m">👑 含 1 个隐藏款</span>
+      <span class="chip" data-page-node-id="qEhkaNtREq8SiKM5C121mL">🔒 本机计算不上传</span>
+    </div>
+
+    <div class="notice" data-page-node-id="0RDXVcWjlaTruo2fSHHk23">
+      <h3 data-page-node-id="X2UXxw9cFCfslOgtxgZMNq">⚠️ 免责声明</h3>
+      <p data-page-node-id="Ciwx8E8NJELnZDqqOGiggq">本测试是一款娱乐性质的心理状态小游戏，所有结果文案仅供休闲参考，不构成任何医疗、心理诊断或专业建议。如果你或身边的人正被情绪问题困扰，请及时寻求专业心理支持。愿你真实、鲜活，被认真对待。</p>
+      <p class="privacy" data-page-node-id="EC63AJBErxd3JXBk6OZFZb">🔒 本测试不采集任何个人信息，所有计算仅在你的设备本地完成，不会上传。</p>
+    </div>
+
+    <button class="btn pink" id="btn-start" data-page-node-id="pnWjuTcwCpU92awFYjL9N6">🧪 开始鉴定</button>
+    <div class="resume-wrap" id="resume-wrap" style="display:none" data-page-node-id="i2TwUp3rgI6BXvzHlMp8Qd">
+      <button class="resume-link" id="btn-resume" data-page-node-id="KEUKf5ktQZhuLGjeinI1oI">检测到未完成的鉴定，继续 →</button>
+    </div>
+    <p class="hero-foot" data-page-node-id="ZCybXytcOrKH2a4QvIIShV">当代年轻人精神状态鉴定书 · 仅供娱乐</p>
+  </section>
+
+  <!-- ============ 答题页 ============ -->
+  <section class="screen" id="screen-quiz" data-page-node-id="uBRmTgOSZM3EVnx7zLZb1O">
+    <div class="quiz-top" data-page-node-id="aiyjPMeOCrUHRvqq9gbt7b">
+      <button class="back-btn" id="btn-back" aria-label="上一题" data-page-node-id="vB2U5QFZ3tNAlPoKZEeMxd">‹</button>
+      <span class="q-count" id="q-count" data-page-node-id="TYwbqCsReXqD5Rhz6Qro6C">第 1 / 18 题</span>
+      <div class="progress" data-page-node-id="TukytYPd7fCi0hISF4tykq"><div class="progress-fill" id="progress-fill" data-page-node-id="Gea9X22maXCpgDcVSVfjKc"></div></div>
+    </div>
+    <div class="axis-tag" id="q-axis-tag" data-page-node-id="rN8LNXfglJOwfpsGW8Ac9z">🤪 发疯指数</div>
+    <div class="q-card" data-page-node-id="WDE5n5SCeRICkgJAO7JVP8"><h2 class="q-text" id="q-text" data-page-node-id="NVYm0ONCU268cGOP3g75Ef"></h2></div>
+    <div class="options" id="options" data-page-node-id="p1670KfKPQNNvPyRydyB1r"></div>
+  </section>
+
+  <!-- ============ 计算动画 ============ -->
+  <section class="screen screen-calc" id="screen-calc" data-page-node-id="CyBq1FpabIJmRaZY1vXHyF">
+    <div class="calc-emoji" id="calc-emoji" data-page-node-id="ZZwYuAMjKtiGQj4qdxqCry">🧪</div>
+    <div class="calc-msg" id="calc-msg" data-page-node-id="f8U2RAu3a5YZoAGWpr5ImR">正在连接精神状态服务器…</div>
+    <div class="progress calc-progress" data-page-node-id="OWJZrryPZGcXoFMNyX3fyT"><div class="progress-fill" id="calc-fill" data-page-node-id="UHTOo5SOP4Y84N5wNfelHD"></div></div>
+    <div class="calc-final" id="calc-final" data-page-node-id="TNnf3EuPchJhfslmjJ3xdP"></div>
+  </section>
+
+  <!-- ============ 结果报告页 ============ -->
+  <section class="screen" id="screen-result" data-page-node-id="R7W7XBm7EU8uRzPsB672vr">
+    <div class="report-head" data-page-node-id="v4eOKl2UHR2xCZlMhBnvUk">
+      <span data-page-node-id="uK9apWj6aVtYmkJLwfxFlO">📋 精神状态鉴定证书</span>
+      <span class="code" id="res-code" data-page-node-id="GNomzkR06VEdcst7oYyYMc">No.</span>
+    </div>
+
+    <div class="type-card reveal" id="type-card" data-page-node-id="GQ5VL8h38QMHCPzOy4oFq5">
+      <div class="type-emoji" id="res-emoji" data-page-node-id="x6pX88uBKLpwvUVB59BXon">🤪</div>
+      <div class="type-name" id="res-name" data-page-node-id="KBhG3GuYujwsPggamRoaa7">型号</div>
+      <div class="type-title" id="res-title" data-page-node-id="dhk407QiwgLgRcytqsD50a">「」</div>
+      <div class="type-tags" id="res-tags" data-page-node-id="Q50HvwYR5pAYjxZt3hTzJk"></div>
+    </div>
+    <div class="stamp-row" id="stamp-row" style="display:none" data-page-node-id="8pmUg598FMQAsojrUN9a3c"><span class="stamp" data-page-node-id="FMZ7sPXbboaADqisznpnhw">已确诊</span></div>
+
+    <div class="sec-card" data-page-node-id="McCMdaq0wwhRQWGC4ueTqI">
+      <div class="sec-title" data-page-node-id="rhDoZDEFhoCRZfk6Cd0zqD">📊 精神浓度六维图</div>
+      <div id="res-bars" data-page-node-id="TpYNXx83mWDPthEHvIGicQ"></div>
+      <p class="bar-note" data-page-node-id="9m1BRwSmWAcjb6pjen9mQF">* 浓度为娱乐测算值：由你的作答换算而成，请勿当真（但也别完全不当真）。</p>
+    </div>
+
+    <div class="sec-card" data-page-node-id="SJHF7uj7WakTQ7HEs2ZHHS">
+      <div class="sec-title" data-page-node-id="KcK7O3bK2BqlfgLV5DfH1O">🔍 症状分析</div>
+      <p class="desc" id="res-desc" data-page-node-id="G9yKuR7GhToEyIFbzQZCZ2"></p>
+    </div>
+
+    <div class="sec-card" data-page-node-id="kUxqhZAp05TeuHhkSmwDaw">
+      <div class="sec-title" data-page-node-id="PztQ94nsp9nSLbEyEUkocc">💊 调理建议</div>
+      <ul class="advice-list" id="res-advice" data-page-node-id="w3M66seNFuWqmwcmsK0BoR"></ul>
+    </div>
+
+    <div class="match-card" id="res-match" data-page-node-id="sOqEr1euGELXv5R06bc228"></div>
+
+    <div class="verdict-card" id="res-verdict" data-page-node-id="5GibHXuTpAOOtKkxMg64yU"></div>
+
+    <div class="share-actions" data-page-node-id="TEaKY8hO2EIzpZSKreKwz2">
+      <button class="btn" id="btn-share-card" data-page-node-id="iSE3F4AupCEPVFywZ4NrUV">📸 生成分享卡片</button>
+      <button class="btn ghost sm" id="btn-copy" data-page-node-id="B4nN8W8bT5aIja4ZC4ndbT">📋 复制结果文案</button>
+      <button class="btn ghost sm" id="btn-retry" data-page-node-id="hzWY8Hf1XhjBYWwV1iOvcM">🔄 重新鉴定</button>
+    </div>
+    <p class="share-hint" data-page-node-id="BfCE5AaVDYiT1O8WAZpuGk">💡 直接截图本页，也是一张完整的长图报告</p>
+
+    <div class="report-foot" data-page-node-id="saekekvhLsCGI2tsoZwTdo">
+      <p data-page-node-id="NQ3kl8cqDHu64HongxK1Io">⚠️ 免责声明：本测试为娱乐性质小游戏，结果仅供休闲参考，不构成任何医疗或心理诊断建议。如有情绪困扰，请寻求专业心理支持。</p>
+      <p data-page-node-id="aTUaXnyQCU8cpXTB28A24E">🔒 隐私说明：本测试不采集任何个人信息，所有计算均在本机完成，不会上传。</p>
+      <p class="watermark" data-page-node-id="wgkFg8V3eonEJdCTLawFIM">当代年轻人精神状态鉴定书</p>
+    </div>
+  </section>
+
+</div>
+
+<!-- 分享卡片弹层 -->
+<div class="modal-mask" id="share-modal" data-page-node-id="GuKDFLrDgfedQ3GgmX3k1B">
+  <div class="modal" data-page-node-id="jHRwrUxTgoTuVsveroFsAE">
+    <img id="share-img" alt="分享卡片" data-page-node-id="lBC0MSTR3PFs8FO8El0MAi">
+    <p data-page-node-id="Zeu5aShZLcQ7AiFlBWw90B">长按图片保存，发小红书 @你那个精神状态美丽的闺蜜</p>
+    <a class="btn sm" id="share-dl" download="精神状态鉴定卡.png" data-page-node-id="2vkLcynIq2uiX1OdeIEBNc">⬇️ 下载图片</a>
+    <button class="btn ghost sm" id="share-close" data-page-node-id="U3Is6nyNNi1C8FNc8zMtZD">关闭</button>
+  </div>
+</div>
+
+<div class="toast" id="toast" data-page-node-id="6jyZdNFoLzLXHO5vYuJk5f"></div>
+
+<script data-page-node-id="474kp5fbWa5A6MMRM07tkC">
+/* =====================================================
+ * 数据层：题库 / 六轴坐标库 / 结果文案库 / 配置 / 合规文案
+ * 改文案只动这里，逻辑在引擎层
+ * ===================================================== */
+const DATA = {
+  meta: {
+    productName: '当代年轻人精神状态鉴定书',
+    version: '1.0.0',
+    questionCount: 18,
+    typeCount: 12
+  },
+  config: {
+    optionMax: 2,        // 单个选项最大分值
+    highThreshold: 3,    // 轴原始分 ≥ 3 → high
+    lowThreshold: -3,    // 轴原始分 ≤ -3 → low
+    calcMs: 2000,        // 计算动画时长
+    advanceDelayMs: 380, // 选项点击后自动翻题延时
+    storageKey: 'msq_progress_v1'
+  },
+  axes: [
+    { id: 'chaos',    name: '发疯指数', emoji: '🤪', color: '#FF4D8D', levelLabels: { high: '随时可疯', mid: '偶尔发作', low: '情绪稳定' } },
+    { id: 'flat',     name: '摆烂指数', emoji: '🛋️', color: '#22D3C5', levelLabels: { high: '低功耗运行', mid: '间歇性振作', low: '支棱 ing' } },
+    { id: 'grind',    name: '内卷指数', emoji: '📈', color: '#3A86FF', levelLabels: { high: '卷力充沛', mid: '该卷才卷', low: '佛系运营' } },
+    { id: 'social',   name: '社交电量', emoji: '🔋', color: '#FF8A3D', levelLabels: { high: '社牛满格', mid: '看人下菜', low: '人类勿扰' } },
+    { id: 'anxiety',  name: '焦虑指数', emoji: '🌡️', color: '#F43F5E', levelLabels: { high: '24h 营业', mid: '适度未雨', low: '天塌先吃饭' } },
+    { id: 'night',    name: '熬夜指数', emoji: '🌙', color: '#7C5CFF', levelLabels: { high: '夜间档常驻', mid: '偶尔破功', low: '养生局成员' } }
+  ],
+  questions: [
+    { id: 'q1',  axis: 'chaos',   text: '排队时有人插队，你的真实反应是：', options: [
+      { t: '当场输出，道理和表情管理一起放弃', v: 2 },
+      { t: '猛翻白眼，给朋友连发 60 秒语音', v: 1 },
+      { t: '算了算了，但会默默记恨一整天', v: -1 },
+      { t: '没注意，插队的人追不上我的思绪', v: -2 } ] },
+    { id: 'q2',  axis: 'night',   text: '你昨晚几点睡的：', options: [
+      { t: '凌晨两点以后，夜是我的', v: 2 },
+      { t: '十二点到两点之间，常规操作', v: 1 },
+      { t: '十一点左右，偶尔破功', v: -1 },
+      { t: '十点不到，养生局常驻嘉宾', v: -2 } ] },
+    { id: 'q3',  axis: 'flat',    text: '你收藏夹里的「干货教程」现在怎么样了：', options: [
+      { t: '收藏 = 学会，码了就是看了', v: 2 },
+      { t: '偶尔深夜愧疚地翻出来看两眼', v: 1 },
+      { t: '真在学，虽然进度感人', v: -1 },
+      { t: '我的收藏夹只囤表情包和梗图', v: -2 } ] },
+    { id: 'q4',  axis: 'anxiety', text: '睡前躺下的那一刻，你的大脑：', options: [
+      { t: '自动循环播放白天的尴尬名场面', v: 2 },
+      { t: '复盘今天，顺便把明天也安排了', v: 1 },
+      { t: '刷会儿手机，困意自然来袭', v: -1 },
+      { t: '秒睡，雷打不动', v: -2 } ] },
+    { id: 'q5',  axis: 'chaos',   text: '周一早上闹钟响的那一刻，你心里的弹幕是：', options: [
+      { t: '「这学/班是一天也上不了了」', v: 2 },
+      { t: '叹气三连，但身体还是坐起来了', v: 1 },
+      { t: '麻木，按掉，起身，行尸走肉', v: -1 },
+      { t: '我三点才睡，闹钟它不配响', v: -2 } ] },
+    { id: 'q6',  axis: 'social',  text: '团建 / 聚会上，你通常是：', options: [
+      { t: '气氛担当，梗王本王', v: 2 },
+      { t: '熟人面前话痨，生人面前礼貌', v: 1 },
+      { t: '默默干饭，适时点头', v: -1 },
+      { t: '能请假就请假，社交太耗电', v: -2 } ] },
+    { id: 'q7',  axis: 'grind',   text: '深夜十一点，你大概率正在：', options: [
+      { t: '赶 due / 加班 / 偷偷学习，卷死他们', v: 2 },
+      { t: '一边焦虑一边刷手机，间歇性奋起', v: 1 },
+      { t: '追剧，但心里有一丝愧疚', v: -1 },
+      { t: '睡了，天大的事明天再说', v: -2 } ] },
+    { id: 'q8',  axis: 'night',   text: '半夜不睡的时候，你在干嘛：', options: [
+      { t: '报复性刷手机，谁也别管我', v: 2 },
+      { t: '追剧 / 小说 / 游戏，时间小偷', v: 1 },
+      { t: '偶尔失眠，多数时候正常作息', v: -1 },
+      { t: '熬夜伤身，我的生物钟很讲理', v: -2 } ] },
+    { id: 'q9',  axis: 'flat',    text: '一个没有安排的标准周末，你的作息是：', options: [
+      { t: '床—沙发—床，人体工学黄金曲线', v: 2 },
+      { t: '出门是不可能的，除非外卖到了', v: 1 },
+      { t: '会安排点活动，但大概率临时鸽', v: -1 },
+      { t: '周末不躺平，我要悄悄变强', v: -2 } ] },
+    { id: 'q10', axis: 'anxiety', text: '手机电量剩 20% 且没带充电宝：', options: [
+      { t: '全程焦虑，眼睛长在电量上', v: 2 },
+      { t: '不太自在，会自觉减少玩手机', v: 1 },
+      { t: '无所谓，没电我就观察人类', v: -1 },
+      { t: '经常自动关机，已练成佛系神功', v: -2 } ] },
+    { id: 'q11', axis: 'chaos',   text: '你最近一次情绪失控的原因是：', options: [
+      { t: '小事，但那一刻我就是想炸', v: 2 },
+      { t: '小事，骂完哭完忽然神清气爽', v: 1 },
+      { t: '大事，但我硬扛下来了', v: -1 },
+      { t: '想不起来，我情绪稳定得像块石头', v: -2 } ] },
+    { id: 'q12', axis: 'social',  text: '收到消息「在吗」，你一般：', options: [
+      { t: '秒回，还先发三个表情包热场', v: 2 },
+      { t: '看关系，熟人立刻热情上线', v: 1 },
+      { t: '先晾一会儿，组织好语言再回', v: -1 },
+      { t: '装死，希望对方自己忘掉', v: -2 } ] },
+    { id: 'q13', axis: 'grind',   text: '你的年度计划完成度：', options: [
+      { t: '超额完成，我还自己加了指标', v: 2 },
+      { t: '完成一半，剩下一半在滚动', v: 1 },
+      { t: '想不起来年初立了啥', v: -1 },
+      { t: '不立计划，计划就是用来被打败的', v: -2 } ] },
+    { id: 'q14', axis: 'night',   text: '「再玩五分钟就睡」这句话，你今晚说了几遍：', options: [
+      { t: '五遍起步，而且每遍都是真心话', v: 2 },
+      { t: '两三遍，最后一遍是真的', v: 1 },
+      { t: '一般不说，说睡就睡', v: -1 },
+      { t: '我的词典里没有熬夜这个选项', v: -2 } ] },
+    { id: 'q15', axis: 'flat',    text: '面对「差不多就行了」这句话，你的态度是：', options: [
+      { t: '完全就是我的人生底层代码', v: 2 },
+      { t: '表面摆烂，暗中较劲', v: 1 },
+      { t: '说说而已，该干的活没敢真摆', v: -1 },
+      { t: '我的字典里只有「做到最好」', v: -2 } ] },
+    { id: 'q16', axis: 'anxiety', text: '面对未知的变动（调岗 / 考试 / 搬家），你：', options: [
+      { t: '提前很久就开始辗转反侧', v: 2 },
+      { t: '会担心，但能先把眼前的事做好', v: 1 },
+      { t: '船到桥头自然', v: -1 },
+      { t: '变动？求之不得，刺激', v: -2 } ] },
+    { id: 'q17', axis: 'social',  text: '连续社交三天之后，你的状态是：', options: [
+      { t: '电量满格，还想约第四天', v: 2 },
+      { t: '有点累，但奶茶能续上', v: 1 },
+      { t: '需要独处一整天来回血', v: -1 },
+      { t: '已开启「人类勿扰」模式', v: -2 } ] },
+    { id: 'q18', axis: 'grind',   text: '刷到别人晒证书晒 offer，你的第一反应：', options: [
+      { t: '燃起来了，马上去查怎么报名', v: 2 },
+      { t: '焦虑三分钟，然后丢进收藏夹吃灰', v: 1 },
+      { t: '哦，然后手指继续往下滑', v: -1 },
+      { t: '真心祝福，我的节奏我主宰', v: -2 } ] }
+  ],
+  /* 12 款结果型号。centroid 为六轴归一化坐标，顺序与 axes 一致：
+     [chaos, flat, grind, social, anxiety, night] */
+  types: [
+    {
+      id: 'manic', name: '纯种疯批型', emoji: '🤪', color: '#FF4D8D',
+      title: '不是脾气差，是情绪流通性太好',
+      tags: ['一点就炸', '输出型人格', '坏情绪不过夜'],
+      desc: '你的精神状态主打一个「真」。别人内伤你外伤，别人忍者你当场爆发。世界对你说「算了算了」，你对世界说「不行不行」。疯批的人免疫力普遍更强——因为毒素都在发疯那一刻排出去了。你不是脾气差，你是情绪流通性太好，从不给坏情绪过夜的机会。',
+      advice: [
+        '每周给自己安排一次「合法发疯」：KTV、鬼屋、吐槽群，任选其一',
+        '发疯前默数三秒，能保住 80% 的人际关系',
+        '找到那个能接住你情绪的人，疯批也需要观众',
+        '把「关我屁事」和「关你屁事」设为手机壁纸，各管一半'
+      ],
+      match: '你和「省电模式人类」是互补型战友：他灭火，你放火，凑合能过。',
+      verdict: '建议每月发疯配额 4 次，未用完部分可累积至下月（娱乐说法）。',
+      centroid: [0.85, 0.10, 0.10, 0.00, 0.45, 0.10]
+    },
+    {
+      id: 'flat', name: '摆烂艺术大师', emoji: '🛋️', color: '#22D3C5',
+      title: '不是懒，是主动选择低功耗运行',
+      tags: ['低功耗运行', '收藏夹吃灰', '床是宇宙中心'],
+      desc: '你是懂能量管理的。同样的电量，别人用来内卷，你用来待机——这很难说不是一种智慧。你的收藏夹比图书馆还全，你的待办清单比星座运势还不准，但你的精神状态，意外地比很多卷王都稳定。人生不是每一局都要 Carry，有时候当好一个观众，就是满分答卷。',
+      advice: [
+        '把「差不多」升级成「差不多但交了」，摆烂的底线是别掉链子',
+        '每周挑一件最小的事做完，摆烂也需要成就感续命',
+        '允许自己休息，但不允许自己失联——老板和朋友都一样',
+        '试试「15 分钟法则」：先做 15 分钟，剩下的交给天命'
+      ],
+      match: '你和「卷王本王」互为救命恩人：他带你进步，你带他保命。',
+      verdict: '经鉴定，你的 CPU 占用率长期健康，建议保持。',
+      centroid: [0.00, 0.85, -0.10, 0.00, 0.00, 0.35]
+    },
+    {
+      id: 'grind', name: '卷王本王', emoji: '📈', color: '#3A86FF',
+      title: '努力得像个反派，但目标是正面角色',
+      tags: ['计划表狂魔', '深夜赶 due', '偷偷变强'],
+      desc: '你的年度计划比天气预报还详细，你的待办清单打勾的声音比 ASMR 还解压。别人看到的是「卷」，你自己知道，那是对生活的一种掌控感。但请注意：卷王的世界里，「休息」不是奖励，是工序之一。不会休息的卷王，迟早变成焦虑永动机。',
+      advice: [
+        '在计划表里写上「无所事事一小时」，并像完成 KPI 一样完成它',
+        '每月选一天当「废物」，废物是卷王的战略物资',
+        '别用别人的进度条丈量自己的人生，版本不同',
+        '记得：证书会发霉，头发不会再生'
+      ],
+      match: '你和「摆烂艺术大师」是地球两极，但见面总能互相治愈。',
+      verdict: '鉴定结果：强，但建议给生活留几个 bug，太完美会假。',
+      centroid: [0.10, -0.10, 0.85, 0.00, 0.35, 0.10]
+    },
+    {
+      id: 'social', name: '社交悍匪', emoji: '🔋', color: '#FF8A3D',
+      title: '人群是我的充电桩，独处才是低电量模式',
+      tags: ['气氛担当', '梗王本王', '破冰专业户'],
+      desc: '你是行走的氛围制造机，群聊里的「哈哈哈哈哈」一半是你贡献的。对你来说，社交不是消耗，是充电；认识新朋友就像开盲盒，永远期待下一个。你的精神状态非常「外向型健康」，但再满格的电量，也有需要独处回血的时候——那不是孤僻，是系统维护。',
+      advice: [
+        '每周留半天「飞行模式日」，给社交电池一次校准的机会',
+        '热闹之后如果突然 emo，是正常的，那不是你的问题',
+        '珍惜那个能让你安静待着也不尴尬的朋友',
+        '聊天可以热场，但别热到把所有人的秘密都听了'
+      ],
+      match: '你和「摆烂社恐综合症」是冰与火：你能治他的尴尬，他能治你的吵闹。',
+      verdict: '诊断意见：社交牛逼症（非贬义），建议常态化发作。',
+      centroid: [0.15, 0.00, 0.10, 0.85, 0.00, 0.10]
+    },
+    {
+      id: 'night', name: '深夜哲学家', emoji: '🌙', color: '#7C5CFF',
+      title: '白天人类，深夜诗人，凌晨三点想通了宇宙',
+      tags: ['报复性熬夜', '深夜顿悟', '夜间档常驻'],
+      desc: '白天的你按部就班，深夜的你开始思考人生、宇宙和晚饭为什么吃得那么饱。凌晨三点是你一天中最清醒的时刻，也是朋友圈文案产量最高的时刻。你不是不想睡，是不想结束这唯一属于自己的几个小时。深夜很温柔，但熬夜真的伤身——哲学家也需要睡眠来续费灵感。',
+      advice: [
+        '把「再玩五分钟」改成「再玩十分钟就睡」，先骗过大脑',
+        '睡前一小时把手机放在需要下床才能够到的地方',
+        '深夜的顿悟先记下来，第二天再看，80% 会想销毁',
+        '试试早起代替熬夜：清晨的安静和深夜一样，但不掉头发'
+      ],
+      match: '你和「焦虑永动机」是深夜病房的左右护法，建议互相监督睡觉。',
+      verdict: '医嘱：夜间哲思请设置截止时间，建议不超过凌晨一点。',
+      centroid: [0.00, 0.20, 0.00, 0.00, 0.30, 0.85]
+    },
+    {
+      id: 'anxiety', name: '焦虑永动机', emoji: '🌡️', color: '#F43F5E',
+      title: '脑子 24 小时营业，从不打烊',
+      tags: ['睡前复盘', '电量恐慌', '未雨绸缪型'],
+      desc: '你的大脑是一家全年无休的便利店，凌晨两点还在循环播放白天的对话，手机电量 20% 就是你的一级警报。你总在为还没发生的事预支烦恼，把事情在脑子里先失败一遍。但其实，你担心的那些事，90% 都不会发生，剩下的 10% 你也比想象中能扛。永动机也需要保养，别让焦虑抢跑你的人生。',
+      advice: [
+        '给担心设定「营业时间」：每天 15 分钟专门焦虑，到点打烊',
+        '把「万一」改成「就算」，天塌了也有个子高的（没有也能扛）',
+        '写下来：焦虑落在纸上会缩小一半，在脑子里会膨胀三倍',
+        '练习「完成大于完美」，交出去的 60 分也是分'
+      ],
+      match: '你和「深夜哲学家」适合做室友，互相监督早睡，输的人请奶茶。',
+      verdict: '诊断意见：思虑周全，但建议给大脑安排年假，每年至少一次。',
+      centroid: [0.10, 0.00, 0.20, 0.00, 0.85, 0.45]
+    },
+    {
+      id: 'situp', name: '仰卧起坐选手', emoji: '🤸', color: '#10B981',
+      title: '在躺平和内卷之间，反复仰卧起坐',
+      tags: ['间歇性奋起', '持续性想躺', '左右横跳'],
+      desc: '你是当代年轻人最经典的形态：躺又躺不平，卷又卷不动，卡在中间做仰卧起坐。周一立志本周逆袭，周三收藏夹吃灰，周五在深夜发誓下周一定。但说真的，能一直在「想变好」和「想休息」之间拉扯，说明你既没放弃生活，也没被生活吃掉——这已经很厉害了。',
+      advice: [
+        '别定宏大目标，定「今天比昨天好 5%」的微小目标',
+        '接受「间歇性努力」也是努力，肌肉是练出来的，不是想出来的',
+        '躺的时候好好躺，别带着愧疚感躺，那是双倍消耗',
+        '找一个搭子，仰卧起坐有人数着会做得更快'
+      ],
+      match: '你和「纯种疯批型」是起跑线队友：他喊开始，你随时躺下。',
+      verdict: '鉴定结果：核心力量（指心态）尚可，建议降低配速，拉长战线。',
+      centroid: [0.00, 0.70, 0.70, 0.00, 0.30, 0.20]
+    },
+    {
+      id: 'grindmad', name: '发疯学习机', emoji: '📚', color: '#8B5CF6',
+      title: '一边发疯一边进步，疯得很有规划',
+      tags: ['疯批外壳', '卷王内核', '边哭边学'],
+      desc: '你是最可怕的混合形态：嘴上喊着「不学了不干了」，手上把活全干完了；刚在群里发疯怼人，转头默默改完了第八版方案。你的进步是用发疯兑换的——情绪是燃料，不是阻力。厉害是真厉害，累也是真累。学习机也需要停机检修，不然会过热死机。',
+      advice: [
+        '发疯和进步可以并存，但别把发疯当努力的前置条件',
+        '每完成一个阶段，给自己一个实实在在的奖励',
+        '找到不用发疯也能启动的方法：比如先做 5 分钟',
+        '别把「我在吃苦」当勋章，吃苦不是目的，是成本'
+      ],
+      match: '你和「卷王本王」的区别是：他优雅地赢，你疯疯癫癫地赢。',
+      verdict: '诊断意见：性能过剩，建议增加娱乐内存，防止系统过热。',
+      centroid: [0.70, -0.10, 0.60, 0.10, 0.20, 0.10]
+    },
+    {
+      id: 'nightemo', name: '深夜 emo 批发商', emoji: '🌧️', color: '#0EA5C9',
+      title: '半夜不睡的人，心里都有一场小雨',
+      tags: ['深夜作家', '情绪夜班', '网抑云常驻'],
+      desc: '白天你是正常人，深夜你是诗人、哲学家兼哭包。一首歌能让你回到 2018 年，一句歌词能让你写完 800 字小作文。你不是矫情，是白天太忙，只有深夜才轮到情绪上班。emo 不可怕，它是心里那场小雨在下完。但别每晚都下雨，会内涝的。',
+      advice: [
+        '深夜的情绪先存档，早八起来再读取，杀伤力减半',
+        '少在半夜做决定、发消息、翻旧账——夜里没有理智',
+        '给手机设置「就寝模式」，把 emo 的麦关掉',
+        '找个人聊聊，批发商也需要经销商分担库存'
+      ],
+      match: '你和「深夜哲学家」是夜间档的双子星，建议组队早睡。',
+      verdict: '医嘱：夜间情绪流量已超标，建议设置每日限额。',
+      centroid: [0.10, 0.10, 0.00, 0.00, 0.70, 0.70]
+    },
+    {
+      id: 'flatsocial', name: '摆烂社恐综合症', emoji: '🫥', color: '#64748B',
+      title: '社交愿望为负，摆烂技巧满级',
+      tags: ['人类勿扰', '已读乱回', '能鸽就鸽'],
+      desc: '你的理想生活是：一个人，一部手机，一床被子，从此联系人类用漂流瓶。群聊永远在看，发言永远没有；「在吗」是你的最高级别警报。但社恐不是缺陷，是节能模式——你把社交电量全部省下来，用在了自己身上。真正重要的关系，你其实维护得很好，只是方式比较安静。',
+      advice: [
+        '接受「社恐」设定，但别让它替你拒绝所有机会',
+        '从「线上文字社交」开始练习，性价比最高',
+        '鸽人之前想三秒：这次鸽了，下次约你的人就少一个',
+        '每周和一个人说一句真心话，社恐的心灵也需要通风'
+      ],
+      match: '你和「社交悍匪」是互补插件：他负责热闹，你负责真实。',
+      verdict: '诊断意见：节能标兵，但建议偶尔开机，防止系统生锈。',
+      centroid: [0.00, 0.70, -0.10, -0.70, 0.10, 0.30]
+    },
+    {
+      id: 'eco', name: '省电模式人类', emoji: '🔌', color: '#F59E0B',
+      title: '情绪稳定得像个 bug，但跑得比谁都久',
+      tags: ['淡定从容', '天塌先吃饭', '稳如老狗'],
+      desc: '你是当代年轻人里的稀有物种：消息已读不回不焦虑，计划被打乱不崩溃，天大的事先吃完饭再说。别人在发疯、内卷、emo 三班倒的时候，你稳稳地跑在自己的节奏里。这不是麻木，是高级的稳定——你的内核，比大多数人想象的都强大。',
+      advice: [
+        '稳定是天赋，但别把「没事」当口头禅，情绪也需要出口',
+        '偶尔发疯一次有益身心，别憋着，会憋出内伤',
+        '你的淡定是很多朋友的定心丸，记得也让自己依靠别人',
+        '保持运动，稳的人更需要好身体来扛事'
+      ],
+      match: '你是所有型号的「情绪 ICU」，但记得自己也可以进 ICU。',
+      verdict: '鉴定结果：心理健康优等生，建议定期复查（指继续开心）。',
+      centroid: [-0.80, -0.50, -0.50, -0.50, -0.60, -0.50]
+    },
+    {
+      id: 'hexagon', name: '六边形发疯战士', emoji: '👑', color: '#FFD52E',
+      title: '六项全能，全疯。全村找不出第二个',
+      tags: ['稀有隐藏款', '六维拉满', '传说级精神状态'],
+      desc: '恭喜，你抽中了概率极低的隐藏款：发疯、摆烂、内卷、社交、焦虑、熬夜，六项全部拉满。你是白天社交悍匪、深夜 emo 批发商、周一卷王本王、周三摆烂大师的六边形合体。别人是精神状态有问题，你是精神状态构成问题。但正是这种极致的浓度，让你比任何人都鲜活、热闹、有生命力。稀有不是病，是天赋。',
+      advice: [
+        '六维拉满的你，最需要的是一天「全部关机的勇气」',
+        '别同时开六个系统，会烧主板——一次只开一个',
+        '你的浓度适合当创作者：发疯、emo、熬夜都是素材',
+        '记住：隐藏款之所以稀有，是因为真实——请继续保持'
+      ],
+      match: '你和所有型号都能聊两句，因为你体内住着全部 12 款。',
+      verdict: '稀有款鉴定：六边形战士，全服掉落率极低（娱乐说法），请截图留念。',
+      centroid: [0.90, 0.90, 0.90, 0.90, 0.90, 0.90],
+      rare: true
+    }
+  ],
+  calcMessages: [
+    '正在连接精神状态服务器…',
+    '校准发疯浓度仪…',
+    '测量摆烂基准线…',
+    '比对 12 款稀有型号…',
+    '生成你的鉴定编号…'
+  ]
+};
+
+/* =====================================================
+ * 引擎层：纯函数，不碰 DOM，node 可直接 require 测试
+ * ===================================================== */
+var Engine = (function (root, factory) {
+  var E = factory();
+  if (typeof module === 'object' && module.exports) { module.exports = E; }
+  else { root.Engine = E; }
+  return E;
+})(typeof self !== 'undefined' ? self : this, function () {
+  'use strict';
+
+  function axisMaxOf(data, axisId) {
+    var n = 0;
+    data.questions.forEach(function (q) { if (q.axis === axisId) n++; });
+    return n * data.config.optionMax;
+  }
+
+  function computeAxisScores(data, answers) {
+    var sums = {};
+    data.axes.forEach(function (a) { sums[a.id] = 0; });
+    data.questions.forEach(function (q) {
+      var v = answers[q.id];
+      sums[q.axis] += (typeof v === 'number' && isFinite(v)) ? v : 0;
+    });
+    return sums;
+  }
+
+  function normalize(scores, data) {
+    var out = {};
+    data.axes.forEach(function (a) {
+      var mx = axisMaxOf(data, a.id) || 1;
+      var v = (scores[a.id] || 0) / mx;
+      out[a.id] = Math.max(-1, Math.min(1, v));
+    });
+    return out;
+  }
+
+  function levelOf(raw, cfg) {
+    if (raw >= cfg.highThreshold) return 'high';
+    if (raw <= cfg.lowThreshold) return 'low';
+    return 'mid';
+  }
+
+  /* 稀有款特殊规则：六轴全部达到 high 才命中 */
+  function specialRule(scores, data) {
+    var rare = null;
+    data.types.forEach(function (t) { if (t.rare) rare = t; });
+    if (!rare) return null;
+    var allHigh = data.axes.every(function (a) {
+      return (scores[a.id] || 0) >= data.config.highThreshold;
+    });
+    return allHigh ? rare : null;
+  }
+
+  /* 最近质心匹配；平分取靠前型号，保证确定性 */
+  function matchType(norm, data) {
+    var best = null, bestD = Infinity;
+    data.types.forEach(function (t) {
+      if (t.rare) return;
+      var d = 0;
+      data.axes.forEach(function (a, ai) {
+        var diff = (norm[a.id] || 0) - (t.centroid[ai] || 0);
+        d += diff * diff;
+      });
+      if (d < bestD - 1e-12) { bestD = d; best = t; }
+    });
+    return best;
+  }
+
+  /* 鉴定编号：由作答确定性派生 */
+  function reportCode(data, answers) {
+    var s = '';
+    data.questions.forEach(function (q) {
+      var v = answers[q.id];
+      s += ((typeof v === 'number' && isFinite(v)) ? v : 0) + '-';
+    });
+    var h = 5381;
+    for (var i = 0; i < s.length; i++) { h = (((h << 5) + h) + s.charCodeAt(i)) >>> 0; }
+    var code = h.toString(36).toUpperCase();
+    while (code.length < 6) code = '0' + code;
+    return 'JM-' + code.slice(0, 6);
+  }
+
+  function runDiagnosis(data, answers) {
+    var cfg = data.config;
+    var scores = computeAxisScores(data, answers);
+    var norm = normalize(scores, data);
+    var special = specialRule(scores, data);
+    var type = special || matchType(norm, data);
+    var axes = data.axes.map(function (a) {
+      var raw = scores[a.id] || 0;
+      var mx = axisMaxOf(data, a.id);
+      var lv = levelOf(raw, cfg);
+      return {
+        id: a.id, name: a.name, emoji: a.emoji, color: a.color,
+        raw: raw, normalized: norm[a.id], level: lv,
+        levelLabel: a.levelLabels[lv],
+        concentration: Math.round(((raw + mx) / (2 * mx)) * 100)
+      };
+    });
+    return { type: type, axes: axes, reportCode: reportCode(data, answers), rare: !!special };
+  }
+
+  return {
+    axisMaxOf: axisMaxOf,
+    computeAxisScores: computeAxisScores,
+    normalize: normalize,
+    levelOf: levelOf,
+    specialRule: specialRule,
+    matchType: matchType,
+    reportCode: reportCode,
+    runDiagnosis: runDiagnosis
+  };
+});
+
+/* node 测试导出（浏览器中自动跳过） */
+if (typeof module === 'object' && module.exports) {
+  module.exports = { DATA: DATA, Engine: Engine };
+}
+
+/* =====================================================
+ * 交互层：DOM 逻辑
+ * ===================================================== */
+(function () {
+  'use strict';
+  if (typeof document === 'undefined') { return; }
+
+  var $ = function (sel) { return document.querySelector(sel); };
+  var $$ = function (sel) { return Array.prototype.slice.call(document.querySelectorAll(sel)); };
+  var cfg = DATA.config;
+  var LETTERS = ['A', 'B', 'C', 'D'];
+
+  var state = { idx: 0, answers: {}, result: null };
+  var pendingAdvance = null;
+
+  var store = {
+    load: function () {
+      try { return JSON.parse(localStorage.getItem(cfg.storageKey) || 'null'); }
+      catch (e) { return null; }
+    },
+    save: function () {
+      try {
+        localStorage.setItem(cfg.storageKey, JSON.stringify({ idx: state.idx, answers: state.answers }));
+      } catch (e) { /* 隐私模式等场景静默失败 */ }
+    },
+    clear: function () {
+      try { localStorage.removeItem(cfg.storageKey); } catch (e) {}
+    }
+  };
+
+  function showScreen(id) {
+    $$('.screen').forEach(function (s) { s.classList.toggle('active', s.id === 'screen-' + id); });
+    try { window.scrollTo(0, 0); } catch (e) {}
+  }
+
+  var toastTimer = null;
+  function toast(msg) {
+    var el = $('#toast');
+    el.textContent = msg;
+    el.classList.add('show');
+    if (toastTimer) clearTimeout(toastTimer);
+    toastTimer = setTimeout(function () { el.classList.remove('show'); }, 2200);
+  }
+
+  /* ---------- 答题页 ---------- */
+  function renderQuestion() {
+    var q = DATA.questions[state.idx];
+    var axis = null;
+    DATA.axes.forEach(function (a) { if (a.id === q.axis) axis = a; });
+    // 偶数题选项倒序展示，避免“永远选 A”的位置规律（分值跟随选项文本，不影响计分）
+    var opts = q.options.slice();
+    if (Number(q.id.slice(1)) % 2 === 0) { opts.reverse(); }
+    $('#q-count').textContent = '第 ' + (state.idx + 1) + ' / ' + DATA.questions.length + ' 题';
+    $('#progress-fill').style.width = (Object.keys(state.answers).length / DATA.questions.length * 100) + '%';
+    $('#btn-back').disabled = state.idx === 0;
+    $('#q-axis-tag').textContent = axis.emoji + ' ' + axis.name;
+    $('#q-axis-tag').style.background = axis.color;
+    $('#q-text').textContent = q.text;
+
+    var box = $('#options');
+    box.innerHTML = '';
+    opts.forEach(function (opt, i) {
+      var btn = document.createElement('button');
+      btn.className = 'option' + (state.answers[q.id] === opt.v ? ' picked' : '');
+      btn.setAttribute('data-value', String(opt.v));
+      var letter = document.createElement('span');
+      letter.className = 'opt-letter';
+      letter.textContent = LETTERS[i] || '';
+      var text = document.createElement('span');
+      text.className = 'opt-text';
+      text.textContent = opt.t;
+      btn.appendChild(letter);
+      btn.appendChild(text);
+      btn.addEventListener('click', function () { pickOption(btn, opt.v); });
+      box.appendChild(btn);
+    });
+  }
+
+  function pickOption(btn, value) {
+    if (pendingAdvance) return; // 防止与返回上一题竞态
+    var q = DATA.questions[state.idx];
+    state.answers[q.id] = value;
+    $$('#options .option').forEach(function (b) { b.classList.remove('picked'); });
+    btn.classList.add('picked');
+    $('#progress-fill').style.width = (Object.keys(state.answers).length / DATA.questions.length * 100) + '%';
+    store.save();
+    pendingAdvance = setTimeout(function () {
+      pendingAdvance = null;
+      if (state.idx < DATA.questions.length - 1) {
+        state.idx++;
+        renderQuestion();
+      } else {
+        store.clear();
+        runCalc();
+      }
+    }, cfg.advanceDelayMs);
+  }
+
+  function backQuestion() {
+    if (pendingAdvance) { clearTimeout(pendingAdvance); pendingAdvance = null; }
+    if (state.idx > 0) {
+      state.idx--;
+      store.save();
+      renderQuestion();
+    }
+  }
+
+  /* ---------- 计算动画 ---------- */
+  function runCalc() {
+    state.result = Engine.runDiagnosis(DATA, state.answers);
+    showScreen('calc');
+    var msgEl = $('#calc-msg'), fill = $('#calc-fill'), finalEl = $('#calc-final');
+    var emojis = ['🧪', '🔬', '🧠', '📊', '✨'];
+    var mi = 0;
+    msgEl.textContent = DATA.calcMessages[0];
+    $('#calc-emoji').textContent = emojis[0];
+    finalEl.textContent = '';
+    fill.style.transition = 'none';
+    fill.style.width = '0%';
+    var msgTimer = setInterval(function () {
+      mi = (mi + 1) % DATA.calcMessages.length;
+      msgEl.textContent = DATA.calcMessages[mi];
+      $('#calc-emoji').textContent = emojis[mi % emojis.length];
+    }, 400);
+    requestAnimationFrame(function () {
+      requestAnimationFrame(function () {
+        fill.style.transition = 'width ' + cfg.calcMs + 'ms linear';
+        fill.style.width = '100%';
+      });
+    });
+    setTimeout(function () {
+      clearInterval(msgTimer);
+      msgEl.textContent = '鉴定完成';
+      finalEl.textContent = '✨ 正在生成你的鉴定书…';
+    }, cfg.calcMs - 200);
+    setTimeout(function () { renderResult(); }, cfg.calcMs + 250);
+  }
+
+  /* ---------- 报告页 ---------- */
+  function renderResult() {
+    var diag = state.result;
+    var t = diag.type;
+    $('#res-code').textContent = 'No.' + diag.reportCode;
+    var d = new Date();
+    var dateStr = d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0');
+
+    var card = $('#type-card');
+    card.style.setProperty('--tc', t.color);
+    $('#res-emoji').textContent = t.emoji;
+    $('#res-name').textContent = t.name;
+    $('#res-title').textContent = '「' + t.title + '」';
+
+    var tagsBox = $('#res-tags');
+    tagsBox.innerHTML = '';
+    t.tags.forEach(function (tag) {
+      var s = document.createElement('span');
+      s.className = 'tag' + (t.rare ? ' rare' : '');
+      s.textContent = tag;
+      tagsBox.appendChild(s);
+    });
+    $('#stamp-row').style.display = diag.rare ? 'flex' : 'none';
+
+    var bars = $('#res-bars');
+    bars.innerHTML = '';
+    diag.axes.forEach(function (a) {
+      var row = document.createElement('div');
+      row.className = 'bar-row';
+      var head = document.createElement('div');
+      head.className = 'bar-head';
+      var name = document.createElement('span');
+      name.textContent = a.emoji + ' ' + a.name;
+      var lv = document.createElement('span');
+      lv.className = 'lv';
+      lv.textContent = a.levelLabel + ' · ' + a.concentration + '%';
+      head.appendChild(name);
+      head.appendChild(lv);
+      var track = document.createElement('div');
+      track.className = 'bar-track';
+      var fill = document.createElement('div');
+      fill.className = 'bar-fill';
+      fill.style.background = a.color;
+      fill.setAttribute('data-pct', String(a.concentration));
+      track.appendChild(fill);
+      row.appendChild(head);
+      row.appendChild(track);
+      bars.appendChild(row);
+    });
+
+    $('#res-desc').textContent = t.desc;
+    var advice = $('#res-advice');
+    advice.innerHTML = '';
+    t.advice.forEach(function (a) {
+      var li = document.createElement('li');
+      li.textContent = a;
+      advice.appendChild(li);
+    });
+    $('#res-match').textContent = '💞 合拍指南：' + t.match;
+    $('#res-verdict').textContent = t.verdict + '（鉴定编号 ' + diag.reportCode + ' · ' + dateStr + '）';
+
+    showScreen('result');
+    animateBars();
+    card.classList.remove('reveal');
+    void card.offsetWidth;
+    card.classList.add('reveal');
+  }
+
+  function animateBars() {
+    var fills = $$('.bar-fill');
+    var pcts = fills.map(function (f) { return Number(f.getAttribute('data-pct')) || 0; });
+    if (!window.requestAnimationFrame) {
+      fills.forEach(function (f, i) { f.style.width = pcts[i] + '%'; });
+      return;
+    }
+    var start = null, DUR = 750;
+    function frame(ts) {
+      if (start === null) start = ts;
+      var p = Math.min(1, (ts - start) / DUR);
+      var e = 1 - Math.pow(1 - p, 3);
+      fills.forEach(function (f, i) { f.style.width = (pcts[i] * (0.15 + 0.85 * e)) + '%'; });
+      if (p < 1) requestAnimationFrame(frame);
+    }
+    requestAnimationFrame(frame);
+  }
+
+  /* ---------- 分享 ---------- */
+  function shareText() {
+    var diag = state.result;
+    return '【我的精神状态鉴定结果】\n型号：' + diag.type.emoji + ' ' + diag.type.name +
+      '\n「' + diag.type.title + '」\n鉴定编号：' + diag.reportCode +
+      '\n你也来测测你的精神浓度～';
+  }
+
+  function copyText(text) {
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      return navigator.clipboard.writeText(text);
+    }
+    return new Promise(function (resolve, reject) {
+      try {
+        var ta = document.createElement('textarea');
+        ta.value = text;
+        ta.style.position = 'fixed';
+        ta.style.opacity = '0';
+        document.body.appendChild(ta);
+        ta.select();
+        var ok = document.execCommand('copy');
+        document.body.removeChild(ta);
+        if (ok) resolve(); else reject(new Error('copy failed'));
+      } catch (e) { reject(e); }
+    });
+  }
+
+  function roundPill(ctx, x, y, w, h, bg, fg, text) {
+    var r = h / 2;
+    ctx.beginPath();
+    ctx.moveTo(x + r, y);
+    ctx.lineTo(x + w - r, y);
+    ctx.arcTo(x + w, y, x + w, y + h, r);
+    ctx.arcTo(x + w, y + h, x, y + h, r);
+    ctx.arcTo(x, y + h, x, y, r);
+    ctx.arcTo(x, y, x + w, y, r);
+    ctx.closePath();
+    ctx.fillStyle = bg;
+    ctx.fill();
+    ctx.lineWidth = 3;
+    ctx.strokeStyle = fg;
+    ctx.stroke();
+    ctx.fillStyle = fg;
+    ctx.font = '700 22px "PingFang SC","Microsoft YaHei",sans-serif';
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+    ctx.fillText(text, x + w / 2, y + h / 2 + 1);
+  }
+
+  function drawShareCard(diag) {
+    var W = 750, H = 1000;
+    var c = document.createElement('canvas');
+    c.width = W; c.height = H;
+    var ctx = c.getContext('2d');
+    if (!ctx) return null;
+    var t = diag.type;
+    var CN = '"PingFang SC","Microsoft YaHei","Noto Sans SC",sans-serif';
+
+    ctx.fillStyle = '#FFF3E0';
+    ctx.fillRect(0, 0, W, H);
+    ctx.strokeStyle = '#16161A';
+    ctx.lineWidth = 6;
+    ctx.strokeRect(20, 20, W - 40, H - 40);
+    ctx.lineWidth = 2;
+    ctx.strokeRect(34, 34, W - 68, H - 68);
+
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'alphabetic';
+    ctx.fillStyle = '#16161A';
+    ctx.font = '800 32px ' + CN;
+    ctx.fillText('当代年轻人精神状态鉴定书', W / 2, 96);
+    roundPill(ctx, W / 2 - 118, 116, 236, 42, t.color, '#16161A', '娱乐测算 · 非专业诊断');
+
+    ctx.font = '100px "Apple Color Emoji","Segoe UI Emoji","Noto Color Emoji",sans-serif';
+    ctx.fillText(t.emoji, W / 2, 262);
+
+    ctx.font = '900 68px ' + CN;
+    ctx.lineWidth = 12;
+    ctx.strokeStyle = '#16161A';
+    ctx.strokeText(t.name, W / 2, 352);
+    ctx.fillStyle = t.color;
+    ctx.fillText(t.name, W / 2, 352);
+
+    ctx.font = '700 28px ' + CN;
+    ctx.fillStyle = '#44444E';
+    ctx.fillText('「' + t.title + '」', W / 2, 404);
+
+    ctx.strokeStyle = 'rgba(22,22,26,.35)';
+    ctx.lineWidth = 2;
+    ctx.setLineDash([8, 8]);
+    ctx.beginPath();
+    ctx.moveTo(70, 444);
+    ctx.lineTo(W - 70, 444);
+    ctx.stroke();
+    ctx.setLineDash([]);
+
+    diag.axes.forEach(function (a, i) {
+      var y = 492 + i * 54;
+      ctx.textAlign = 'left';
+      ctx.font = '800 24px ' + CN;
+      ctx.fillStyle = '#16161A';
+      ctx.fillText(a.emoji + ' ' + a.name, 76, y);
+      ctx.textAlign = 'right';
+      ctx.font = '800 24px ' + CN;
+      ctx.fillStyle = '#5C5C68';
+      ctx.fillText(a.concentration + '%', W - 76, y);
+      var bx = 76, bw = W - 152, by = y + 12, bh = 14;
+      ctx.fillStyle = '#F2EEE3';
+      ctx.beginPath();
+      ctx.roundRect ? ctx.roundRect(bx, by, bw, bh, 7) : ctx.rect(bx, by, bw, bh);
+      ctx.fill();
+      ctx.strokeStyle = '#16161A';
+      ctx.lineWidth = 2;
+      ctx.stroke();
+      ctx.fillStyle = a.color;
+      var w = Math.max(bh, bw * a.concentration / 100);
+      ctx.beginPath();
+      ctx.roundRect ? ctx.roundRect(bx, by, w, bh, 7) : ctx.rect(bx, by, w, bh);
+      ctx.fill();
+    });
+
+    ctx.textAlign = 'center';
+    ctx.font = '800 30px ' + CN;
+    ctx.fillStyle = '#16161A';
+    ctx.fillText('长按保存 · 叫上闺蜜一起测', W / 2, 892);
+    ctx.font = '700 26px ' + CN;
+    ctx.fillStyle = '#5C5C68';
+    ctx.fillText('鉴定编号：' + diag.reportCode, W / 2, 936);
+    ctx.font = '600 22px ' + CN;
+    ctx.fillStyle = '#8A8A95';
+    ctx.fillText('结果仅供娱乐 · 计算仅在本机完成', W / 2, 972);
+    return c;
+  }
+
+  function openShareCard() {
+    if (!state.result) return;
+    var c = drawShareCard(state.result);
+    if (!c) { toast('当前环境不支持生成图片，请直接截图本页'); return; }
+    var url;
+    try { url = c.toDataURL('image/png'); } catch (e) { toast('生成失败，请直接截图本页'); return; }
+    $('#share-img').src = url;
+    var dl = $('#share-dl');
+    dl.href = url;
+    $('#share-modal').classList.add('show');
+  }
+
+  /* ---------- 事件绑定 ---------- */
+  function init() {
+    var saved = store.load();
+    if (saved && saved.answers && Object.keys(saved.answers).length > 0 && Object.keys(saved.answers).length < DATA.questions.length) {
+      $('#resume-wrap').style.display = 'block';
+      $('#btn-resume').addEventListener('click', function () {
+        state.answers = saved.answers;
+        state.idx = Math.min(saved.idx || 0, DATA.questions.length - 1);
+        showScreen('quiz');
+        renderQuestion();
+      });
+    }
+
+    $('#btn-start').addEventListener('click', function () {
+      state.idx = 0;
+      state.answers = {};
+      state.result = null;
+      store.clear();
+      showScreen('quiz');
+      renderQuestion();
+    });
+
+    $('#btn-back').addEventListener('click', backQuestion);
+    $('#btn-retry').addEventListener('click', function () {
+      state.idx = 0; state.answers = {}; state.result = null;
+      store.clear();
+      showScreen('start');
+    });
+    $('#btn-share-card').addEventListener('click', openShareCard);
+    $('#btn-copy').addEventListener('click', function () {
+      copyText(shareText()).then(function () { toast('文案已复制，去粘贴分享吧'); },
+        function () { toast('复制失败，请手动截图分享'); });
+    });
+    $('#share-close').addEventListener('click', function () { $('#share-modal').classList.remove('show'); });
+    $('#share-modal').addEventListener('click', function (e) {
+      if (e.target === this) this.classList.remove('show');
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();
+</script>
+
+
+</body></html>
